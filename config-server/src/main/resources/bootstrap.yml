@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: config-center
+  profiles:
+    include: config1, config2, config3

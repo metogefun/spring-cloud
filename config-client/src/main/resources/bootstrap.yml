@@ -1,0 +1,16 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://host1:9001/eureka/,http://host2:9002/eureka/,http://host3:9003/eureka/
+  instance:
+    prefer-ip-address: true
+spring:
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config-center
+  application:
+    name: config-client
+  profiles:
+    active: dev

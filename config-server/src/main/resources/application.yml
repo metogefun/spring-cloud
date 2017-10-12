@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          force-pull: true
+          uri: git@github.com:metogefun/config-repo.git
+eureka:
+  client:
+    service-url:
+      defaultZone: http://host1:9001/eureka/,http://host2:9002/eureka/,http://host3:9003/eureka/
+  instance:
+    prefer-ip-address: true

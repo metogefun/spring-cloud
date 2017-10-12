@@ -1,0 +1,6 @@
+spring:
+  profiles:
+    active: host1
+    include: host1, host2, host3
+  application:
+    name: eureka-server

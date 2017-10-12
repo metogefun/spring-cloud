@@ -1,0 +1,8 @@
+eureka:
+  instance:
+    hostname: host3
+  client:
+    serviceUrl:
+      defaultZone: http://host1:9001/eureka/,http://host2:9002/eureka/
+server:
+  port: 9003
